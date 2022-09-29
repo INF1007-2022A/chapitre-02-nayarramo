@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 def majuscule(mot):
     # TODO completer la fonction ici
+    new = ""
     for letter in mot:
-        if 97 <= ord(letter) and ord(letter) >= 122:
-            letter = chr(ord(letter)-22)
-    return mot
+        new += chr(ord(letter)-32)
+    return new
 
 
 if __name__ == '__main__':
